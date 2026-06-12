@@ -4,7 +4,7 @@ A simple and responsive **Employee Management System** built using HTML, CSS, an
 
 ---
 
-## 🚀 Features
+## Features
 
 - Add new employees
 - Edit employee details
