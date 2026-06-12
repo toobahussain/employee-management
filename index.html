@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Employee Management System</h1>
+    </header>
+
+    <main>
+
+        <section class="stats">
+            <div class="card">
+                <h3>Total Employees</h3>
+                <p id="totalEmployees">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Departments</h3>
+                <p id="totalDepartments">0</p>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by name or department">
+        </section>
+
+        <section class="form-section">
+            <h2>Add Employee</h2>
+
+            <form id="employeeForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Employee Name">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Employee Email">
+
+                <input
+                    type="text"
+                    id="department"
+                    placeholder="Department">
+
+                <button type="submit">
+                    Save Employee
+                </button>
+
+            </form>
+        </section>
+
+        <section class="table-section">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="employeeTableBody">
+
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+
+</body>
+</html>
